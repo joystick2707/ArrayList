@@ -1,3 +1,5 @@
+//Trabalho de Bryan Strey e Victor Luis
+
 public class Main {
     public static void main(String[] args) {
         MeuArrayList lista = new MeuArrayList(2);
