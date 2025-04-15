@@ -1,3 +1,5 @@
+//Trabalho de Bryan Strey e Victor Luis
+
 public class MeuArrayList {
     private Object[] elementos;
     private int tamanho = 0;
@@ -8,7 +10,6 @@ public class MeuArrayList {
 
     public void adicionar(Object elemento) {
         if (tamanho == elementos.length) {
-            // Aumenta a capacidade do array
             Object[] novoArray = new Object[elementos.length * 2];
             for (int i = 0; i < elementos.length; i++) {
                 novoArray[i] = elementos[i];
@@ -37,7 +38,7 @@ public class MeuArrayList {
             elementos[i] = elementos[i + 1];
         }
         tamanho--;
-        elementos[tamanho] = null; // Limpa o espaço
+        elementos[tamanho] = null; 
     }
 
     public void imprimir() {
